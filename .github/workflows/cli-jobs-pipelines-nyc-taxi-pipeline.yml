@@ -7,7 +7,7 @@ name: cli-jobs-pipelines-nyc-taxi-pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0/4 * * *"
+    - cron: "4 6/12 * * *"
   pull_request:
     branches:
       - main
@@ -24,7 +24,7 @@ jobs:
     - name: check out repo
       uses: actions/checkout@v2
     - name: azure login
-      uses: azure/actions/login@v1
+      uses: azure/actions/login@v2
       with:
          creds: ${{secrets.AZURE_CREDENTIALS}}
 
