@@ -26,9 +26,9 @@ az extension add -n ml -y
 
 ## For backward compatibility - running on old subscription
 # <set_variables>
-GROUP="azureml-examples"
+GROUP="MLOps-git-rg"
 LOCATION="eastus"
-WORKSPACE="main"
+WORKSPACE="MLOps-git-ws"
 # </set_variables>
 
 # If RESOURCE_GROUP_NAME is empty, the az configure is pending.
