@@ -24,9 +24,9 @@ jobs:
     - name: check out repo
       uses: actions/checkout@v2
     - name: azure login
-      uses: azure/login@v1.4.3
+      uses: azure/login@v1
       with:
-         creds: ${{secrets.AZURE_CREDENTIALS}}
+         creds: ${{secrets.AZURE_CRED}}
 
     
     - name: setup-cli
