@@ -29,7 +29,10 @@ jobs:
     - name: azure login
       uses: azure/actions/login@v1
       with:
-        creds: ${{secrets.AZURE_CREDENTIALS}}
+         clientId: ${{ secrets.9c17d3a7-a086-47a2-ba55-c156ab6749f8 }}
+         subscriptionId: ${{ secrets.99e06aad-9972-46c1-a5a9-a15902e16c42 }}
+         tenantId: ${{ secrets.1c65e26c-9ff0-4082-b40c-c241794581bd }}
+
     - name: bootstrap resources
       run: |
           echo '${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}';
