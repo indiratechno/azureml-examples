@@ -29,7 +29,7 @@ jobs:
     - name: azure login
       uses: azure/actions/login@v1
       with:
-         creds: ${{secrets.AZURE_CREDS}}
+         creds: ${{secrets.AZURE_CREDENTIALS}}
 
     - name: bootstrap resources
       run: |
